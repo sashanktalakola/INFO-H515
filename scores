@@ -1,49 +1,208 @@
 v1
-LinearRegression - 0.49078328212271793
-Lasso - 0.4906552469254025
-Ridge - 0.49739787239622724
-DecisionTreeRegressor - 0.6870130736182688
-SVR - 0.03612890045475281
-KNeighborsRegressor - 0.6656637776309025
-RandomForestRegressor - 0.7740950347163817
-PoissonRegressor - 0.6703619015300863
+LinearRegression:
+Best Root Mean Squared Error: 539769.004928069
+Best Mean Absolute Error: 323663.1091298797
+Best R2 Error: 0.506628222175459
+
+Lasso:
+Best Root Mean Squared Error: 539868.4112358424
+Best Mean Absolute Error: 323836.01610273274
+Best R2 Error: 0.5064464822739356
+
+Ridge:
+Best Root Mean Squared Error: 534881.5151203567
+Best Mean Absolute Error: 322617.8375856321
+Best R2 Error: 0.5155225173030247
+
+DecisionTreeRegressor:
+Best Root Mean Squared Error: 433932.3748413597
+Best Mean Absolute Error: 227940.45211055723
+Best R2 Error: 0.6811381772107087
+
+SVR:
+Best Root Mean Squared Error: 787285.1316503535
+Best Mean Absolute Error: 476902.73074390506
+Best R2 Error: -0.049596846644681
+
+KNeighborsRegressor:
+Best Root Mean Squared Error: 464729.2307421131
+Best Mean Absolute Error: 248250.51136667686
+Best R2 Error: 0.6342718428839234
+
+RandomForestRegressor:
+Best Root Mean Squared Error: 379563.8693287991
+Best Mean Absolute Error: 186160.79881350714
+Best R2 Error: 0.7560346500262147
+
+PoissonRegressor:
+Best Root Mean Squared Error: 474602.06132091314
+Best Mean Absolute Error: 270984.6866027562
+Best R2 Error: 0.6185675316834724
 
 v2
-LinearRegression - -3.2691675417632645e+18
-Lasso - 0.5159196359724691
-Ridge - 0.5162343171845178
-DecisionTreeRegressor - 0.6863356308382359
-SVR - 0.03929041454539561
-KNeighborsRegressor - 0.6676016418121729
-RandomForestRegressor - 0.7737919703577418
-PoissonRegressor - 0.6062023586166624
+LinearRegression:
+Best Root Mean Squared Error: 488528.46276059333
+Best Mean Absolute Error: 311123.9431356207
+Best R2 Error: 0.49078328212271793
+
+Lasso:
+Best Root Mean Squared Error: 488589.8756175081
+Best Mean Absolute Error: 311067.99557019735
+Best R2 Error: 0.4906552469254025
+
+Ridge:
+Best Root Mean Squared Error: 485345.16375761986
+Best Mean Absolute Error: 310208.22548511147
+Best R2 Error: 0.49739787239622724
+
+DecisionTreeRegressor:
+Best Root Mean Squared Error: 383004.03614726674
+Best Mean Absolute Error: 209287.52099349507
+Best R2 Error: 0.6870106132865768
+
+SVR:
+Best Root Mean Squared Error: 672121.8659830277
+Best Mean Absolute Error: 407318.0490551132
+Best R2 Error: 0.03612890045475281
+
+KNeighborsRegressor:
+Best Root Mean Squared Error: 395849.6457621453
+Best Mean Absolute Error: 219717.89178951198
+Best R2 Error: 0.6656637776309025
+
+RandomForestRegressor:
+Best Root Mean Squared Error: 323698.9374705818
+Best Mean Absolute Error: 174225.19001126537
+Best R2 Error: 0.7764341539381915
+
+PoissonRegressor:
+Best Root Mean Squared Error: 427282.1594648085
+Best Mean Absolute Error: 261575.11302794545
+Best R2 Error: 0.610459668438607
+
 
 v3
-LinearRegression - 0.5384613778573621
-Lasso - 0.5383733261905124
-Ridge - 0.5482858809017641
-DecisionTreeRegressor - 0.7050368882622111
-SVR - -0.028675340470460053
-KNeighborsRegressor - 0.6496251779703364
-RandomForestRegressor - 0.7734318798806668
-PoissonRegressor - 0.6552443259098363
+LinearRegression:
+Best Root Mean Squared Error: 523306.4948409559
+Best Mean Absolute Error: 307773.3944643767
+Best R2 Error: 0.5362641536141766
+
+Lasso:
+Best Root Mean Squared Error: 522360.2655637341
+Best Mean Absolute Error: 307675.5121751718
+Best R2 Error: 0.5379396677737279
+
+Ridge:
+Best Root Mean Squared Error: 517670.32453758275
+Best Mean Absolute Error: 306192.0246701784
+Best R2 Error: 0.54619951306561
+
+DecisionTreeRegressor:
+Best Root Mean Squared Error: 417346.6388031648
+Best Mean Absolute Error: 229975.10619337537
+Best R2 Error: 0.7050473799320804
+
+SVR:
+Best Root Mean Squared Error: 776844.3481702977
+Best Mean Absolute Error: 468105.28978562617
+Best R2 Error: -0.021942448638705425
+
+KNeighborsRegressor:
+Best Root Mean Squared Error: 447534.2970705671
+Best Mean Absolute Error: 243533.45815452992
+Best R2 Error: 0.6608349721128136
+
+RandomForestRegressor:
+Best Root Mean Squared Error: 363553.589694361
+Best Mean Absolute Error: 179473.55854977528
+Best R2 Error: 0.7761818547851944
+
+PoissonRegressor:
+Best Root Mean Squared Error: 450097.9825497169
+Best Mean Absolute Error: 252508.4291660918
+Best R2 Error: 0.6569380509182949
+
 
 v4
-LinearRegression - 0.526524722944828
-Lasso - 0.5267822217626739
-Ridge - 0.5299147465280742
-DecisionTreeRegressor - 0.6511276856074155
-SVR - -0.006124544698968171
-KNeighborsRegressor - 0.701406892083684
-RandomForestRegressor - 0.7350825973538467
-PoissonRegressor - 0.6416150521218481
+LinearRegression:
+Best Root Mean Squared Error: 475830.3964760462
+Best Mean Absolute Error: 301770.1923630427
+Best R2 Error: 0.526524722944828
+
+Lasso:
+Best Root Mean Squared Error: 475700.9890561439
+Best Mean Absolute Error: 301727.15163257776
+Best R2 Error: 0.5267822217626739
+
+Ridge:
+Best Root Mean Squared Error: 474123.89343042334
+Best Mean Absolute Error: 300855.71511245094
+Best R2 Error: 0.5299147465280742
+
+DecisionTreeRegressor:
+Best Root Mean Squared Error: 415063.0311438659
+Best Mean Absolute Error: 222457.41932419714
+Best R2 Error: 0.6397358478369812
+
+SVR:
+Best Root Mean Squared Error: 693632.446501592
+Best Mean Absolute Error: 440955.4585503089
+Best R2 Error: -0.006124544698968171
+
+KNeighborsRegressor:
+Best Root Mean Squared Error: 377870.8737914093
+Best Mean Absolute Error: 200621.61674037916
+Best R2 Error: 0.701406892083684
+
+RandomForestRegressor:
+Best Root Mean Squared Error: 357876.8635295044
+Best Mean Absolute Error: 177214.2330582367
+Best R2 Error: 0.7321694035979625
+
+PoissonRegressor:
+Best Root Mean Squared Error: 413979.0931166897
+Best Mean Absolute Error: 246228.31316817412
+Best R2 Error: 0.6416150521218481
+
+
 
 v5
-LinearRegression - 0.5095483851873996
-Lasso - 0.5098151293444833
-Ridge - 0.5142556355703465
-DecisionTreeRegressor - 0.7228765976413314
-SVR - 0.029711135889648577
-KNeighborsRegressor - 0.7663791870506564
-RandomForestRegressor - 0.8006063259208326
-PoissonRegressor - 0.6433361330993965
+LinearRegression:
+Best Root Mean Squared Error: 451781.58954742417
+Best Mean Absolute Error: 310145.08905050496
+Best R2 Error: 0.5095483851873996
+
+Lasso:
+Best Root Mean Squared Error: 451658.7165812627
+Best Mean Absolute Error: 310135.048144976
+Best R2 Error: 0.5098151293444833
+
+Ridge:
+Best Root Mean Squared Error: 449564.541668025
+Best Mean Absolute Error: 309266.94501138886
+Best R2 Error: 0.5143502041441828
+
+DecisionTreeRegressor:
+Best Root Mean Squared Error: 339633.9710152597
+Best Mean Absolute Error: 201586.33858898748
+Best R2 Error: 0.7228203408063492
+
+SVR:
+Best Root Mean Squared Error: 635449.391623516
+Best Mean Absolute Error: 401606.9038435538
+Best R2 Error: 0.029711135889648577
+
+KNeighborsRegressor:
+Best Root Mean Squared Error: 311807.250824476
+Best Mean Absolute Error: 186652.82823899755
+Best R2 Error: 0.7663791870506564
+
+RandomForestRegressor:
+Best Root Mean Squared Error: 289082.6701573245
+Best Mean Absolute Error: 167567.6562103214
+Best R2 Error: 0.7991909758932563
+
+PoissonRegressor:
+Best Root Mean Squared Error: 385265.39474245405
+Best Mean Absolute Error: 259558.4141795409
+Best R2 Error: 0.6433361330993965

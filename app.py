@@ -2,6 +2,12 @@ import streamlit as st
 from streamlit_folium import st_folium
 import folium
 from utils import property_type_formatter, calculate_distance, predict, get_city_name
+import numpy as np
+
+# st.set_page_config(layout="wide")
+
+st.markdown("# Melbourne Housing Price Prediction")
+st.write(" ")
 
 if 'selected_point' not in st.session_state:
     st.session_state.selected_point = [-37.805443949342724, 144.97558593750003]
@@ -88,25 +94,34 @@ with st.form("main-form", clear_on_submit=False, border=False):
         city_name, country_name = get_city_name(latitude, longitude)
         
         if (city_name.lower() == "melbourne") and (country_name.lower() == "australia"):
+            
+            if num_rooms >= (num_bed_rooms + num_bath_rooms):
         
-            distance = calculate_distance(clicked_point)
+                distance = calculate_distance(clicked_point)
+                
+                bed2bath = num_bed_rooms / num_bath_rooms
+                
+                processed_land_size = float(np.log(land_size + 1))
+                
+                submitted_data = {
+                    "Distance": distance,
+                    "Landsize": processed_land_size,
+                    "Lattitude": latitude,
+                    "Longtitude": longitude,
+                    "BedtoBath": bed2bath,
+                    "Rooms": num_rooms,
+                    "Type": property_type,
+                    "Bedroom2": num_bed_rooms,
+                    "Bathroom": num_bath_rooms,
+                }
+                
+                prediction = predict(submitted_data)
+                # prediction_popup(f"Predicted Property Value - `A$ {prediction}`")
+                st.success(f"Predicted Property Value - A${prediction}")
+                
+            else:
+                application_error("Number of rooms must be larger than number of bed rooms and bathrooms")
             
-            bed2bath = num_bed_rooms / num_bath_rooms
-            
-            submitted_data = {
-                "Distance": distance,
-                "Landsize": land_size,
-                "Lattitude": latitude,
-                "Longtitude": longitude,
-                "BedtoBath": bed2bath,
-                "Rooms": num_rooms,
-                "Type": property_type,
-                "Bedroom2": num_bed_rooms,
-                "Bathroom": num_bath_rooms,
-            }
-            
-            prediction = predict(submitted_data)
-            prediction_popup(f"Predicted Property Value - `A$ {prediction}`")
             
         else:
             application_error(f"Please select a location in `Melbourne`, `Australia`. But given `{city_name}`, `{country_name}`")
