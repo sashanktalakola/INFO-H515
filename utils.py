@@ -1,6 +1,8 @@
+import streamlit as st
 from math import radians, sin, cos, sqrt, atan2
 import joblib
 import pandas as pd
+from geopy.geocoders import Nominatim
 
 
 def calculate_distance(selected_point):
@@ -29,15 +31,32 @@ def property_type_formatter(label):
     return formatter_dict[label]
 
 def preprocess_data(submitted_data):
-    preprocessor = joblib.load("joblib-files/preprocessor.pkl")
+    preprocessor = joblib.load("final/preprocessor.pkl")
     
     processed_data = preprocessor.transform(pd.DataFrame(submitted_data, index=[0, ]))
     return processed_data
 
-def predict(submitted_data, model_path="joblib-files/decision-tree.pkl"):
+def predict(submitted_data, model_path="final/model.pkl"):
     processed_data = preprocess_data(submitted_data)
     
     model = joblib.load(model_path)
     prediction = model.predict(processed_data)
     
-    return prediction
+    return round(prediction[0])
+
+@st.experimental_dialog("Application Error!")
+def application_error(error_message):
+    st.markdown(error_message)
+
+def get_city_name(latitude, longitude):
+    try:
+        geolocator = Nominatim(user_agent="housing-price-application-melbourne")
+        
+        location_details = geolocator.reverse((latitude, longitude)).raw["address"]
+        city_name = location_details.get("city", "")
+        country_name = location_details.get("country", "")
+        
+        return city_name, country_name
+    
+    except:
+        application_error("Unexpected Error occured! Please try again later")

@@ -1,7 +1,12 @@
+.git/
 __pycache__/
 .ipynb_checkpoints/
 venv/
+data/
+notebooks/
+processed-data/
+joblib-files/
 
+README
+scores
 .gitignore
-*.ipynb
-*.csv
